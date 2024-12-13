@@ -1,5 +1,6 @@
 package com.repojava.spring_example.models;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -21,6 +22,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "TB_PRODUCTS")
 public class ProductModel implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
