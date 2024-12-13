@@ -9,8 +9,6 @@ import com.repojava.spring_example.models.ProductModel;
 public class Application {
 
 	public static void main(String[] args) {
-		var product = ProductModel.builder().name("Cesario").build();
-		System.out.println(product.getName());
 		SpringApplication.run(Application.class, args);
 	}
 
