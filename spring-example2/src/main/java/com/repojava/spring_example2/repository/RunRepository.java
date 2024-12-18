@@ -43,14 +43,4 @@ public class RunRepository {
     public void delete(Integer id) {
         runs.removeIf(run -> run.id().equals(id));
     }
-
-    @PostConstruct
-    private void init() {
-        runs.add(
-            new Run(1, "Night run", LocalDateTime.now(), LocalDateTime.now().plus(120, ChronoUnit.MINUTES), 5, Location.OUTDOOR)
-        );
-        runs.add(
-            new Run(2, "Afternoon run", LocalDateTime.now().plus(1, ChronoUnit.DAYS), LocalDateTime.now().plus(120, ChronoUnit.MINUTES), 5, Location.INDOOR)
-        );
-    }
 }

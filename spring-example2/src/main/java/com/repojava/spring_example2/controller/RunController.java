@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,11 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.server.ResponseStatusException;
 
 import com.repojava.spring_example2.model.records.Run;
 import com.repojava.spring_example2.repository.RunRepository;
 import com.repojava.spring_example2.resource.RunNotFoundException;
+
+import jakarta.validation.Valid;
 
 
 @RestController
@@ -49,13 +49,13 @@ public class RunController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("create")
-    void create(@RequestBody Run run) {
+    void create(@Valid @RequestBody Run run) {
         runRepository.create(run);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/{id}")
-    void update(@PathVariable Integer id, @RequestBody Run run) {
+    void update(@Valid @PathVariable Integer id, @RequestBody Run run) {
         runRepository.update(id, run);
     }
 
