@@ -1,0 +1,84 @@
+{
+    "runs": [
+        {
+        "id": 1,
+        "title": "Morning Run",
+        "stardtedOn": "2024-12-18T06:30:00",
+        "completedOn": "2024-12-18T07:15:00",
+        "km": 5,
+        "localtion": "OUTDOOR"
+        },
+        {
+        "id": 2,
+        "title": "Gym Workout",
+        "stardtedOn": "2024-12-18T18:00:00",
+        "completedOn": "2024-12-18T19:30:00",
+        "km": 15,
+        "localtion": "INDOOR"
+        },
+        {
+        "id": 3,
+        "title": "Park Walk",
+        "stardtedOn": "2024-12-19T08:00:00",
+        "completedOn": "2024-12-19T08:45:00",
+        "km": 3,
+        "localtion": "OUTDOOR"
+        },
+        {
+        "id": 4,
+        "title": "Yoga Session",
+        "stardtedOn": "2024-12-19T19:00:00",
+        "completedOn": "2024-12-19T19:45:00",
+        "km": 0,
+        "localtion": "INDOOR"
+        },
+        {
+        "id": 5,
+        "title": "Evening Run",
+        "stardtedOn": "2024-12-18T20:00:00",
+        "completedOn": "2024-12-18T20:45:00",
+        "km": 6,
+        "localtion": "OUTDOOR"
+        },
+        {
+        "id": 6,
+        "title": "Stadium Laps",
+        "stardtedOn": "2024-12-19T17:00:00",
+        "completedOn": "2024-12-19T17:45:00",
+        "km": 4,
+        "localtion": "INDOOR"
+        },
+        {
+        "id": 7,
+        "title": "Mountain Hike",
+        "stardtedOn": "2024-12-17T07:30:00",
+        "completedOn": "2024-12-17T12:00:00",
+        "km": 10,
+        "localtion": "OUTDOOR"
+        },
+        {
+        "id": 8,
+        "title": "Dance Class",
+        "stardtedOn": "2024-12-16T19:00:00",
+        "completedOn": "2024-12-16T20:30:00",
+        "km": 0,
+        "localtion": "INDOOR"
+        },
+        {
+        "id": 9,
+        "title": "Forest Trail",
+        "stardtedOn": "2024-12-15T08:00:00",
+        "completedOn": "2024-12-15T09:30:00",
+        "km": 8,
+        "localtion": "OUTDOOR"
+        },
+        {
+        "id": 10,
+        "title": "Swimming Session",
+        "stardtedOn": "2024-12-14T10:00:00",
+        "completedOn": "2024-12-14T11:00:00",
+        "km": 1,
+        "localtion": "INDOOR"
+        }
+    ]
+}

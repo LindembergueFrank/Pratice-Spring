@@ -31,11 +31,13 @@ public class RunController {
         this.runRepository = runRepository;
     }
 
+    
     @GetMapping("")
     List<Run> findAll() {
         return runRepository.findAll();
     }
 
+    
     @GetMapping("{id}")
     Run findById(@PathVariable Integer id) {
         Optional<Run> run = runRepository.findById(id);

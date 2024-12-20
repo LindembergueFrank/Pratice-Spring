@@ -23,4 +23,5 @@ public record Run(
                         throw new IllegalArgumentException("The end date must be greater than the start date!");
                 }
         }
+
 }
