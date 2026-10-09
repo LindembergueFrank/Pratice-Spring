@@ -32,7 +32,9 @@ Arquivos de IDE, saídas de build e configurações locais não devem ser versio
 
 ## Como executar
 
-Entre no diretório do projeto desejado e consulte seu `pom.xml`, `README.md` e arquivos de configuração. Para projetos Maven com wrapper, o fluxo típico é:
+Entre no diretório do projeto desejado e consulte seu `pom.xml`, `README.md` e arquivos de configuração. O exemplo `ManagementGuests/` utiliza Java 21, Spring Boot 3.4.0, Thymeleaf, JPA e H2.
+
+Os diretórios com Maven Wrapper são `ManagementGuests/`, `spring-example/spring-example/` e `spring-example2/`. A partir de um desses diretórios, execute:
 
 ```bash
 ./mvnw test
